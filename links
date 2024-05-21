@@ -1,0 +1,9 @@
+
+update server
+https://www.youtube.com/watch?v=o3uM6iur-jg
+
+https://www.minecraft.net/de-de/download/server/bedrock
+https://pad.wolkenbar.de/s/minecraft
+
+LD_LIBRARY_PATH=. ./bedrock_server
+
