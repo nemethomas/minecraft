@@ -1,6 +1,26 @@
 
+sudo apt update
+sudo apt upgrade
+
+
 update server
 https://www.youtube.com/watch?v=o3uM6iur-jg
+
+
+rm -r bedrock-server.bak
+mv bedrock-server bedrock-server.bak 
+
+
+
+
+download from 
+https://www.minecraft.net/en-us/download/server/bedrock
+
+
+wget https://minecraft.azureedge.net/bin-linux-preview/bedrock-server-1.21.30.23.zip
+
+unzip bedrock-server-1.21.30.23.zip -d bedrock-server
+
 
 https://www.minecraft.net/de-de/download/server/bedrock
 https://pad.wolkenbar.de/s/minecraft
