@@ -6,8 +6,13 @@ sudo apt upgrade
 update server
 https://www.youtube.com/watch?v=o3uM6iur-jg
 
+# um den bedrock server zu stopen
+stop
 
+# das alte backup löschen
 rm -r bedrock-server.bak
+
+# neues backup erstellen.
 mv bedrock-server bedrock-server.bak 
 
 
@@ -19,11 +24,20 @@ https://www.minecraft.net/en-us/download/server/bedrock
 
 wget https://minecraft.azureedge.net/bin-linux-preview/bedrock-server-1.21.30.23.zip
 
+# das File direkt in den neuen Folder entpacken
 unzip bedrock-server-1.21.30.23.zip -d bedrock-server
 
+# das zip löschen
+rm bedrock-server-1.21.20.03.zip
 
-https://www.minecraft.net/de-de/download/server/bedrock
-https://pad.wolkenbar.de/s/minecraft
+# Configs und worlds aus dem backup herstellen
+cp bedrock-server.bak/server.properties bedrock-server
+cp -r bedrock-server.bak/worlds bedrock-server
+cp bedrock-server.bak/permissions.json bedrock-server
 
+# https://www.minecraft.net/de-de/download/server/bedrock
+# https://pad.wolkenbar.de/s/minecraft
+
+# Server starten
 LD_LIBRARY_PATH=. ./bedrock_server
 
