@@ -39,6 +39,8 @@ cp -r bedrock-server.bak/worlds bedrock-server
 # https://www.minecraft.net/de-de/download/server/bedrock
 # https://pad.wolkenbar.de/s/minecraft
 
+
 # Server starten
+cd bedrock-server
 LD_LIBRARY_PATH=. ./bedrock_server
 
