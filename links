@@ -34,6 +34,7 @@ rm bedrock-server-1.21.20.03.zip
 cp bedrock-server.bak/server.properties bedrock-server
 cp -r bedrock-server.bak/worlds bedrock-server
 cp bedrock-server.bak/permissions.json bedrock-server
+cp -r bedrock-server.bak/worlds bedrock-server
 
 # https://www.minecraft.net/de-de/download/server/bedrock
 # https://pad.wolkenbar.de/s/minecraft
