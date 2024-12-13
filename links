@@ -22,13 +22,20 @@ download from
 https://www.minecraft.net/en-us/download/server/bedrock
 
 
-wget https://minecraft.azureedge.net/bin-linux-preview/bedrock-server-1.21.30.23.zip
+wget https://minecraft.azureedge.net/bin-linux-preview/bedrock-server-1.21.51.zip
+
+1.21.51
+
+# alternativ das file verschieben
+scp bedrock-server-1.21.60.24.zip tom@192.168.178.20:/home/tom
 
 # das File direkt in den neuen Folder entpacken
-unzip bedrock-server-1.21.30.23.zip -d bedrock-server
+unzip bedrock-server-1.21.60.24.zip -d bedrock-server
 
 # das zip löschen
-rm bedrock-server-1.21.20.03.zip
+rm bedrock-server-1.21.60.24.zip
+
+
 
 # Configs und worlds aus dem backup herstellen
 cp bedrock-server.bak/server.properties bedrock-server
@@ -38,9 +45,11 @@ cp -r bedrock-server.bak/worlds bedrock-server
 
 # https://www.minecraft.net/de-de/download/server/bedrock
 # https://pad.wolkenbar.de/s/minecraft
+# https://www.9minecraft.net/minecraft-bedrock-dedicated-server/#Minecraft_Bedrock_Dedicated_Server_12150_12144_Download_Links
 
 
 # Server starten
 cd bedrock-server
+./bedrock_server
 LD_LIBRARY_PATH=. ./bedrock_server
 
