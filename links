@@ -50,6 +50,8 @@ cp -r bedrock-server.bak/worlds bedrock-server
 
 # Server starten
 cd bedrock-server
-./bedrock_server
 LD_LIBRARY_PATH=. ./bedrock_server
+
+# Tailscale starten
+sudo tailscale up
 
