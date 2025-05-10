@@ -47,6 +47,9 @@ cp -r bedrock-server.bak/worlds bedrock-server
 # https://pad.wolkenbar.de/s/minecraft
 # https://www.9minecraft.net/minecraft-bedrock-dedicated-server/#Minecraft_Bedrock_Dedicated_Server_12150_12144_Download_Links
 
+# zip -r bedrock-server.zip bedrock-server.bak
+# scp tom@100.83.215.34:/home/tom/bedrock-server.zip /Users/tom/Dropbox/Minecraft
+
 
 # Server starten
 cd bedrock-server
