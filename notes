@@ -58,5 +58,7 @@ LD_LIBRARY_PATH=. ./bedrock_server
 # Tailscale starten
 sudo tailscale up
 
-./bin/mcupdate.sh https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.120.4.zip
+mcupdate.sh https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-1.21.120.4.zip
+
+screen -r bedrock
 
